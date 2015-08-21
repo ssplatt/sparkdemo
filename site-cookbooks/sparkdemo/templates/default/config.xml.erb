@@ -32,9 +32,7 @@
   <concurrentBuild>false</concurrentBuild>
   <builders>
     <hudson.tasks.Shell>
-      <command>sudo su - spark; 
-export SPARK_HOME=/opt/spark/spark-1.2.1-bin-hadoop2.4/; 
-nosetests; 
+      <command>sudo -H -u spark bash -c &quot;export SPARK_HOME=/opt/spark/spark-1.2.1-bin-hadoop2.4/; nosetests&quot; 
 echo &quot;success&quot; | mail -s &quot;jenkins sparkdemo build status&quot; root@localhost</command>
     </hudson.tasks.Shell>
   </builders>
