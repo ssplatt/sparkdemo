@@ -1,0 +1,9 @@
+*.lock
+*.swp
+/.kitchen
+/.bundle
+/doc
+/.yardoc
+/build
+/bin
+/.idea
